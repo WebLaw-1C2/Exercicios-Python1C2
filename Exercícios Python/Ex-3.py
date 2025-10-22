@@ -1,3 +1,5 @@
+print("-- Calculadora em Python -- \n")
+
 while True:
     try:
         n1 = int(input("Digite um número inteiro: "))
