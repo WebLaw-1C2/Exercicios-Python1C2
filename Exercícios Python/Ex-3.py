@@ -2,7 +2,7 @@ while True:
     try:
         n1 = int(input("Digite um número inteiro: "))
         n2 = int(input("Digite outro número inteiro: "))
-        operador = str(input("Digite o operador (+, -, , /): "))
+        operador = str(input("Digite o operador lógico (+, -, *, /): "))
         break
 
     except ValueError:
@@ -12,10 +12,12 @@ if operador == "+":
     print(f"{n1} + {n2} = {n1 + n2}")
 
 elif operador == "-":
-    print(f"{n1} - {n2} = {n1 + n2}")
+    print(f"{n1} - {n2} = {n1 - n2}")
 
 elif operador == "/":
-    print(f"{n1} / {n2} = {n1 + n2}")
+    print(f"{n1} / {n2} = {n1 / n2}")
 
+elif operador == "*":
+    print(f"{n1} {n2} = {n1 * n2}")
 else:
-    print(f"{n1} {n2} = {n1 + n2}")
+    print("Digite um operador lógico! (+, -, *, /)")
